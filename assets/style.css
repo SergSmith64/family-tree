@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  font-family: serif;
+}
+
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: #fc8080;
+}
+/*# sourceMappingURL=style.css.map */
