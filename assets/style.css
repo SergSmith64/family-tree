@@ -33,6 +33,7 @@ body {
 }
 
 #veiwInfo {
+  font-weight: bold;
   padding: 15px;
   margin: 15px;
   background-color: lightgreen;

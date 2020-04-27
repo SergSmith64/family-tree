@@ -13,6 +13,12 @@ console.log("HOMO__",homo);
 //   console.log("!!!!!!!!!!!");
 //   else console.log("???????????");
 
+// ---- ФОРМИРУЮ МАССИВ ОБЪЕКТОВ ----
+
+var people = [];
+var dlina = people.length;
+console.log("__длина массива__ = ", dlina);
+
 // -------------------------------------
 
 console.log("ВЫВОДИМ начало ввода инфы-1");
