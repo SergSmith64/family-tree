@@ -13,4 +13,21 @@ body {
   margin: 0 auto;
   background-color: #fc8080;
 }
+
+.createHomo {
+  padding: 15px;
+  margin: 20px;
+  width: 300px;
+  background-color: #c0c8f8;
+}
+
+.createHomo input {
+  margin: 5px;
+}
+
+.veiwInfo {
+  padding: 15px;
+  margin: 15px;
+  background-color: lightgreen;
+}
 /*# sourceMappingURL=style.css.map */
