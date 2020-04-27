@@ -1,13 +1,32 @@
 console.log("START");
 
-let animal = {
-  eats: true,
-};
-let rabbit = {
-  jumps: true,
-};
+// ___ Object ___
 
-rabbit.__proto__ = animal;
+let homo = {
+  name: "John",
+  familia: undefined,
+  age: 0
+}
+console.log(homo);
+if (homo.familia === undefined)
+  console.log("!!!!!!!!!!!");
+  else console.log("???????????");
+
+
+// ---------------------------------------------------
+
+// let animal = {
+//   eats: true,
+// };
+// let rabbit = {
+//   jumps: true,
+// };
+
+// rabbit.__proto__ = animal;
+// console.log("___animal__ =", animal);
+// console.log("___rabbit__ =", rabbit);
+
+// --------------------------
 
 // class Animal {
 // 		constructor(name) {
