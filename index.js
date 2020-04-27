@@ -33,11 +33,11 @@ document.getElementById('addHomo').onclick = function() {
   console.log("выше вывел инфу о человеке");
 }
 
-// var veiwInfo = '';
-
 function veiwInfo() {
-  document.getElementById('veiwInfo').innerHTML = veiwInfo;
+  var infoHomo = "";
 
+  infoHomo = homo.familia + " " + homo.name + " " + homo.age;
+  document.getElementById('veiwInfo').innerHTML = infoHomo;
 }
 
 // ---------------------------------------------------
