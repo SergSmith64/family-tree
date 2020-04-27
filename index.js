@@ -33,7 +33,7 @@ document.getElementById('addHomo').onclick = function() {
   console.log("выше вывел инфу о человеке");
 }
 
-var veiwInfo = '';
+// var veiwInfo = '';
 
 function veiwInfo() {
   document.getElementById('veiwInfo').innerHTML = veiwInfo;
