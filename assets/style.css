@@ -25,7 +25,14 @@ body {
   margin: 5px;
 }
 
-.veiwInfo {
+.createHomo button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: red;
+  padding: 15px;
+}
+
+#veiwInfo {
   padding: 15px;
   margin: 15px;
   background-color: lightgreen;

@@ -3,15 +3,42 @@ console.log("START");
 // ___ Object ___
 
 let homo = {
-  name: "John",
+  gender: undefined,
+  name: undefined,
   familia: undefined,
   age: 0
 }
-console.log(homo);
-if (homo.familia === undefined)
-  console.log("!!!!!!!!!!!");
-  else console.log("???????????");
+console.log("HOMO__",homo);
+// if (homo.familia === undefined)
+//   console.log("!!!!!!!!!!!");
+//   else console.log("???????????");
 
+// -------------------------------------
+
+console.log("ВЫВОДИМ начало ввода инфы-1");
+
+document.getElementById('addHomo').onclick = function() {
+  console.log("ВЫВОДИМ начало ввода инфы-2");
+  var g = document.getElementById('gender').value;
+  var f = document.getElementById('familia').value;
+  var n = document.getElementById('name').value;
+  var a = document.getElementById('age').value;
+  console.log("ВЫВОДИМ КЛИК !!!");
+  homo.gender = g;
+  homo.familia = f;
+  homo.name = n;
+  homo.age = a;
+  console.log("HOMO__",homo);
+  veiwInfo();
+  console.log("выше вывел инфу о человеке");
+}
+
+var veiwInfo = '';
+
+function veiwInfo() {
+  document.getElementById('veiwInfo').innerHTML = veiwInfo;
+
+}
 
 // ---------------------------------------------------
 
