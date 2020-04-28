@@ -37,6 +37,14 @@ document.getElementById('addHomo').onclick = function() {
   console.log("HOMO__",homo);
   veiwInfo();
   console.log("выше вывел инфу о человеке");
+
+  // __ промежуточный массив __
+  var tempArr = {};
+  tempArr.familia = f;
+  var i = people.length;
+  people[i] = tempArr;
+  console.log("__массив TEMPARR__ ", tempArr);
+  console.log("__i__что здесь_?__ ", i);
 }
 
 function veiwInfo() {
