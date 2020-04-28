@@ -40,22 +40,27 @@ document.getElementById("addHomo").onclick = function () {
   // __ промежуточный массив __
   var tempArr = {};
   tempArr.familia = f;
+  tempArr.name = n;
+  tempArr.age = a;
   var i = people.length;
   people[i] = tempArr;
   console.log("__массив TEMPARR__ ", tempArr);
   console.log("__i__что здесь_?__ ", i);
-  // veiwInfo();
   out();
 };
-
-// function veiwInfo() {}
 
 function out() {
   var out = "";
   for (var key in people) {
     // __ сначала вывожу инфу о человеке __
-    out += people[key].familia + "<br>";
-    // infoHomo = homo.familia + " " + homo.name + " " + homo.age;
+    // out += people[key].familia + "<br>";
+    out +=
+      people[key].familia +
+      "  " +
+      people[key].name +
+      " год рождения- " +
+      people[key].age +
+      "<br>";
     document.getElementById("out").innerHTML = out;
   }
 }
