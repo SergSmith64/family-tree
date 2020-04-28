@@ -6,9 +6,9 @@ let homo = {
   gender: undefined,
   name: undefined,
   familia: undefined,
-  age: 0
-}
-console.log("HOMO__",homo);
+  age: 0,
+};
+console.log("HOMO__", homo);
 // if (homo.familia === undefined)
 //   console.log("!!!!!!!!!!!");
 //   else console.log("???????????");
@@ -23,19 +23,18 @@ console.log("__длина массива__ = ", dlina);
 
 console.log("ВЫВОДИМ начало ввода инфы-1");
 
-document.getElementById('addHomo').onclick = function() {
+document.getElementById("addHomo").onclick = function () {
   console.log("ВЫВОДИМ начало ввода инфы-2");
-  var g = document.getElementById('gender').value;
-  var f = document.getElementById('familia').value;
-  var n = document.getElementById('name').value;
-  var a = document.getElementById('age').value;
+  var g = document.getElementById("gender").value;
+  var f = document.getElementById("familia").value;
+  var n = document.getElementById("name").value;
+  var a = document.getElementById("age").value;
   console.log("ВЫВОДИМ КЛИК !!!");
   homo.gender = g;
   homo.familia = f;
   homo.name = n;
   homo.age = a;
-  console.log("HOMO__",homo);
-  veiwInfo();
+  console.log("HOMO__", homo);
   console.log("выше вывел инфу о человеке");
 
   // __ промежуточный массив __
@@ -45,16 +44,19 @@ document.getElementById('addHomo').onclick = function() {
   people[i] = tempArr;
   console.log("__массив TEMPARR__ ", tempArr);
   console.log("__i__что здесь_?__ ", i);
-}
+  // veiwInfo();
+  out();
+};
 
-function veiwInfo() {
-  var infoHomo = "";
+// function veiwInfo() {}
+
+function out() {
+  var out = "";
   for (var key in people) {
     // __ сначала вывожу инфу о человеке __
-    veiwInfo += people[key].familia + '<br>';
+    out += people[key].familia + "<br>";
     // infoHomo = homo.familia + " " + homo.name + " " + homo.age;
-    // document.getElementById('veiwInfo').innerHTML = infoHomo;
-    document.getElementById('veiwInfo').innerHTML = veiwInfo;
+    document.getElementById("out").innerHTML = out;
   }
 }
 
