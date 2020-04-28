@@ -49,9 +49,13 @@ document.getElementById('addHomo').onclick = function() {
 
 function veiwInfo() {
   var infoHomo = "";
-
-  infoHomo = homo.familia + " " + homo.name + " " + homo.age;
-  document.getElementById('veiwInfo').innerHTML = infoHomo;
+  for (var key in people) {
+    // __ сначала вывожу инфу о человеке __
+    veiwInfo += people[key].familia + '<br>';
+    // infoHomo = homo.familia + " " + homo.name + " " + homo.age;
+    // document.getElementById('veiwInfo').innerHTML = infoHomo;
+    document.getElementById('veiwInfo').innerHTML = veiwInfo;
+  }
 }
 
 // ---------------------------------------------------
