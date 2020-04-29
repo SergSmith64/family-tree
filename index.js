@@ -21,15 +21,26 @@ console.log("__длина массива__ = ", dlina);
 
 // -------------------------------------
 
-console.log("ВЫВОДИМ начало ввода инфы-1");
+// console.log("ВЫВОДИМ начало ввода инфы-1");
 
 document.getElementById("addHomo").onclick = function () {
-  console.log("ВЫВОДИМ начало ввода инфы-2");
+  // console.log("ВЫВОДИМ начало ввода инфы-2");
   // var g = document.getElementById("gender").value;
   var f = document.getElementById("familia").value;
   var n = document.getElementById("name").value;
   var a = document.getElementById("age").value;
+
+  // ___ radio ____ WORK !!! ______________
+  var rad=document.getElementsByName('user');
+  for (var i=0;i<rad.length; i++) {
+    if (rad[i].checked) {
+      console.log('Выбрана ', i+1, ' радио-кнопка');
+    }
+  }
+  // ______________________________________
+
   console.log("ВЫВОДИМ КЛИК !!!");
+
   // homo.gender = g;
   homo.familia = f;
   homo.name = n;
@@ -45,7 +56,7 @@ document.getElementById("addHomo").onclick = function () {
   var i = people.length;
   people[i] = tempArr;
   console.log("__массив TEMPARR__ ", tempArr);
-  console.log("__i__что здесь_?__ ", i);
+  console.log("_номер_масства _i_= ", i);
   out();
 };
 
