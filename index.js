@@ -3,7 +3,7 @@ console.log("START");
 // ___ Object ___
 
 let homo = {
-  gender: undefined,
+  // gender: undefined,
   name: undefined,
   familia: undefined,
   age: 0,
@@ -25,12 +25,12 @@ console.log("ВЫВОДИМ начало ввода инфы-1");
 
 document.getElementById("addHomo").onclick = function () {
   console.log("ВЫВОДИМ начало ввода инфы-2");
-  var g = document.getElementById("gender").value;
+  // var g = document.getElementById("gender").value;
   var f = document.getElementById("familia").value;
   var n = document.getElementById("name").value;
   var a = document.getElementById("age").value;
   console.log("ВЫВОДИМ КЛИК !!!");
-  homo.gender = g;
+  // homo.gender = g;
   homo.familia = f;
   homo.name = n;
   homo.age = a;

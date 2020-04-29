@@ -12,29 +12,44 @@
 
 	<div class="wrapper">
 		<h1>RadioButtons</h1>
-		<div id="rates">
+		<!-- <div id="rates">
 			<input type="radio" id="r1" name="rate" value="Первый"> Первый
 			<input type="radio" id="r2" name="rate" value="Второй" checked="checked"> Второй
 			<input type="radio" id="r3" name="rate" value="Третий"> Третий
-		</div>
-		<div id="out">111111</div>
+		</div> -->
+
+
+		<input type="radio" name="r1" value="5">Первый<br>
+		<input type="radio" name="r1" value="13">Второй<br>
+		<input type="radio" name="r1" value="53">Третий<br>
+		<button onclick="fun1()">Проверить, какой из элементов выбран</button>
+		<!-- <div id="out">111111</div> -->
 	</div>
 
 	<script>
-		var rates = document.getElementsByName('rate');
-		var rate_value;
-		for (var i = 0; i < rates.length; i++) {
-			if (rates[i].checked) {
-				rate_value = rates[i].value;
+		// __ http://w3.org.ua/js/rabota-s-elementom-radiobutton-v-js/ ___
+		function fun1() {
+			var rad=document.getElementsByName('r1');
+			for (var i=0;i<rad.length; i++) {
+				if (rad[i].checked) {
+					console.log('Выбран '+i+' radiobutton');
+				}
 			}
 		}
-		console.log("__rates__", rates);
-		console.log("__rate_value__", rate_value);
 
-		// document.getElementById('results').innerHTML = rate_value;
-		out = rate_value;
-		console.log("__out__", out);
-		document.getElementById("out").innerHTML = out;
+		// _________ coderoad _________________________
+		// var rates = document.getElementsByName('rate');
+		// var rate_value;
+		// for (var i = 0; i < rates.length; i++) {
+		// 	if (rates[i].checked) {
+		// 		rate_value = rates[i].value;
+		// 	}
+		// }
+		// console.log("__rates__", rates);
+		// console.log("__rate_value__", rate_value);
+		// out = rate_value;
+		// console.log("__out__", out);
+		// document.getElementById("out").innerHTML = out;
 
 	</script>
 </body>
