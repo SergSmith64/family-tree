@@ -13,13 +13,14 @@
 	<div class="wrapper">
 		<h1>RadioButtons</h1>
 		<div id="rates">
-			<input type="radio" id="r1" name="rate" value="Fixed Rate"> Fixed Rate
-			<input type="radio" id="r2" name="rate" value="Variable Rate" checked="checked"> Variable Rate
-			<input type="radio" id="r3" name="rate" value="Multi Rate"> Multi Rate
+			<input type="radio" id="r1" name="rate" value="Первый"> Первый
+			<input type="radio" id="r2" name="rate" value="Второй" checked="checked"> Второй
+			<input type="radio" id="r3" name="rate" value="Третий"> Третий
 		</div>
+		<div id="out">111111</div>
 	</div>
-	<script>
 
+	<script>
 		var rates = document.getElementsByName('rate');
 		var rate_value;
 		for (var i = 0; i < rates.length; i++) {
@@ -27,11 +28,13 @@
 				rate_value = rates[i].value;
 			}
 		}
-
 		console.log("__rates__", rates);
 		console.log("__rate_value__", rate_value);
 
 		// document.getElementById('results').innerHTML = rate_value;
+		out = rate_value;
+		console.log("__out__", out);
+		document.getElementById("out").innerHTML = out;
 
 	</script>
 </body>
