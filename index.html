@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Family Tree</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1>Family Tree</h1>
-      <div class="createHomo">
-        <input type="text" id="gender" placeholder="Пол М/Ж" />
-        <input type="text" id="familia" placeholder="Фамилия" />
-        <input type="text" id="name" placeholder="Имя" />
-        <input type="text" id="age" placeholder="Год рождения" />
-        <button id="addHomo">Добавить человека</button>
-      </div>
-      <!-- <div id="veiwInfo"></div> -->
-      <div id="out"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Family Tree</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Family Tree</h1>
+    <div class="createHomo">
+      <label>
+        <input type="radio" name="user" value="man" checked>Man
+      </label>
+      <label>
+        <input type="radio" name="user" value="woman">Woman
+      </label>
+      <input type="text" id="gender" placeholder="Пол М/Ж" />
+      <input type="text" id="familia" placeholder="Фамилия" />
+      <input type="text" id="name" placeholder="Имя" />
+      <input type="text" id="age" placeholder="Год рождения" />
+      <button id="addHomo">Добавить человека</button>
     </div>
 
-    <script src="./index.js"></script>
-  </body>
+    <div id="out"></div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>
